@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 540">
+<defs><linearGradient id="skin"><stop stop-color="#916653"/><stop offset=".5" stop-color="#d1a486"/><stop offset="1" stop-color="#805848"/></linearGradient><linearGradient id="jacket"><stop stop-color="#141c28"/><stop offset=".5" stop-color="#303d4e"/><stop offset="1" stop-color="#111a26"/></linearGradient><radialGradient id="glow"><stop stop-color="#b8aa9a" stop-opacity=".23"/><stop offset="1" stop-color="#10151d" stop-opacity="0"/></radialGradient></defs>
+<rect width="320" height="540" fill="#1a202a"/><rect width="320" height="540" fill="url(#glow)"/>
+<path d="M12 540Q23 401 62 347Q100 298 160 291Q230 302 260 359Q294 435 306 540Z" fill="url(#jacket)"/>
+<path d="M115 284L160 350 205 284 224 540H96Z" fill="#c8c8c0"/><path d="M115 284L160 350 137 378 84 321Z M205 284L160 350 183 378 236 321Z" fill="#202e3e"/>
+<path d="M131 258V307Q160 337 190 307V258Z" fill="url(#skin)"/>
+<path d="M108 103Q110 49 155 39Q199 36 214 95L209 178Q204 242 162 264Q120 243 111 179Z" fill="url(#skin)"/>
+<path d="M105 130Q91 77 119 45Q146 13 185 28Q220 43 222 89L212 128 201 85Q177 98 151 85Q129 81 116 109Z" fill="#20242b"/>
+<path d="M113 142Q128 132 144 143M179 142Q194 131 208 143" fill="none" stroke="#3d2c27" stroke-width="5.5" stroke-linecap="round"/>
+<ellipse cx="131" cy="153" rx="6.5" ry="4.7" fill="#17191c"/><ellipse cx="193" cy="153" rx="6.5" ry="4.7" fill="#17191c"/>
+<path d="M162 152L155 189 166 192" fill="none" stroke="#8b6251" stroke-width="3.6" stroke-linecap="round"/><path d="M143 215Q161 221 181 215" fill="none" stroke="#754d42" stroke-width="3.8" stroke-linecap="round"/>
+<path d="M115 284L160 350 138 378 86 321Z M205 284L160 350 182 378 235 321Z" fill="#263648"/>
+<path d="M143 354L160 376 177 354 184 540H136Z" fill="#c7c7c0"/><path d="M151 355L160 374 169 355 174 540H146Z" fill="#9e2f3a"/>
+<path d="M207 328L233 337 225 362 199 353Z" fill="#b79a68"/><circle cx="216" cy="345" r="4.5" fill="#e6cb91"/>
+<rect x="1" y="1" width="318" height="538" fill="none" stroke="#c0b08e" stroke-opacity=".18" stroke-width="2"/></svg>

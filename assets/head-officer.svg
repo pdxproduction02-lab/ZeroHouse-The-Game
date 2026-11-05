@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 540">
+<defs><linearGradient id="skin"><stop stop-color="#805747"/><stop offset=".5" stop-color="#c99a7d"/><stop offset="1" stop-color="#765141"/></linearGradient><linearGradient id="uniform"><stop stop-color="#101a29"/><stop offset=".5" stop-color="#2c3a4e"/><stop offset="1" stop-color="#101827"/></linearGradient><radialGradient id="glow"><stop stop-color="#c4b49c" stop-opacity=".25"/><stop offset="1" stop-color="#111720" stop-opacity="0"/></radialGradient></defs>
+<rect width="320" height="540" fill="#171e29"/><rect width="320" height="540" fill="url(#glow)"/>
+<path d="M10 540Q25 390 65 340Q100 292 160 290Q230 296 264 365Q295 440 306 540Z" fill="url(#uniform)"/>
+<path d="M112 282L160 352 208 282 226 540H94Z" fill="#d1d0c8"/><path d="M112 282L160 352 137 384 82 320Z M208 282L160 352 184 384 239 320Z" fill="#1a283a"/>
+<path d="M126 255V307Q160 340 194 307V255Z" fill="url(#skin)"/>
+<path d="M105 103Q109 45 157 40Q203 39 215 96L210 183Q202 247 161 267Q119 246 109 183Z" fill="url(#skin)"/>
+<path d="M103 133Q88 76 119 43Q150 13 190 29Q224 43 226 97L216 133 203 83Q177 97 150 84Q130 80 115 113Z" fill="#25252a"/>
+<path d="M114 143Q130 131 146 143M178 143Q195 130 209 144" fill="none" stroke="#392922" stroke-width="6" stroke-linecap="round"/>
+<ellipse cx="132" cy="153" rx="7" ry="5" fill="#17191d"/><ellipse cx="192" cy="153" rx="7" ry="5" fill="#17191d"/>
+<path d="M162 153L154 190 166 193" fill="none" stroke="#885e4e" stroke-width="4" stroke-linecap="round"/><path d="M141 218Q163 223 184 215" fill="none" stroke="#65453b" stroke-width="4" stroke-linecap="round"/>
+<path d="M112 281L160 352 138 381 87 322Z M208 281L160 352 182 381 234 322Z" fill="#243348"/>
+<path d="M142 355L160 381 178 355 184 540H136Z" fill="#d0d0c9"/><path d="M153 357L160 376 167 357 174 540H146Z" fill="#a52e3a"/>
+<path d="M89 330L115 346 99 370 75 356Z M231 330L205 346 221 370 245 356Z" fill="#ba9b65"/>
+<circle cx="97" cy="348" r="5" fill="#e1c28a"/><circle cx="223" cy="348" r="5" fill="#e1c28a"/>
+<rect x="1" y="1" width="318" height="538" fill="none" stroke="#c0b08e" stroke-opacity=".2" stroke-width="2"/></svg>
