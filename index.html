@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101116" />
+  <meta name="description" content="ZERO HOUSE: THE INVITATION — an interactive psychological thriller." />
+  <title>ZERO HOUSE — THE INVITATION</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main id="app" class="app-shell">
+    <section id="title-screen" class="screen title-screen">
+      <div class="title-backdrop">
+        <div class="title-grid"></div>
+        <div class="title-glow"></div>
+        <div class="title-building">
+          <div class="building-window"></div><div class="building-window"></div><div class="building-window"></div>
+        </div>
+      </div>
+      <div class="title-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> AN INTERACTIVE PSYCHOLOGICAL THRILLER <span class="eyebrow-line"></span></div>
+        <div class="brand-mark">ZERO<span>HOUSE</span></div>
+        <div class="title-subtitle">THE INVITATION</div>
+        <div class="title-rule"></div>
+        <p class="title-tagline">Every debt has a consequence.</p>
+        <div class="title-actions">
+          <button id="new-game" class="primary-button">NEW GAME <span>↗</span></button>
+          <button id="continue-game" class="text-button">CONTINUE <span>→</span></button>
+        </div>
+        <div class="title-footer"><span>EPISODE 01</span><span>•</span><span>THE INVITATION</span><span class="footer-right">A ZERO HOUSE EXPERIENCE</span></div>
+      </div>
+    </section>
+
+    <section id="story-screen" class="screen story-screen hidden">
+      <header class="game-header">
+        <button id="back-title" class="icon-button" aria-label="Return to title">←</button>
+        <div class="header-brand">ZERO<span>HOUSE</span></div>
+        <div class="header-right"><span class="chapter-label">EPISODE 01</span><span class="header-divider"></span><span class="chapter-name">THE INVITATION</span></div>
+      </header>
+
+      <div class="story-stage">
+        <div id="scene-art" class="scene-art police-room">
+          <div class="scene-vignette"></div>
+          <div class="room-ceiling"></div>
+          <div class="room-window"><div class="window-blind"></div><div class="window-blind"></div><div class="window-blind"></div><div class="window-blind"></div></div>
+          <div class="room-light"></div>
+          <div class="room-table"></div>
+          <div class="room-chair chair-left"></div>
+          <div class="room-chair chair-right"></div>
+          <div class="scene-caption"><span class="caption-dot"></span><span id="location-caption">POLICE STATION · INTERROGATION ROOM</span></div>
+          <div class="character-layer">
+            <div id="portrait-man" class="portrait portrait-man">
+              <img src="./assets/frightened-man.svg" alt="Frightened man" />
+            </div>
+            <div id="portrait-chief" class="portrait portrait-chief">
+              <img src="./assets/head-officer.svg" alt="Head Police Officer" />
+            </div>
+            <div id="portrait-daichi" class="portrait portrait-daichi">
+              <img src="./assets/daichi.svg" alt="Daichi" />
+            </div>
+          </div>
+          <div class="scene-grain"></div>
+        </div>
+
+        <aside class="side-panel">
+          <div class="panel-topline">CASE FILE <span>01 / 01</span></div>
+          <div class="case-status"><span class="status-indicator"></span> ACTIVE INVESTIGATION</div>
+          <div class="panel-divider"></div>
+          <div class="panel-section-label">CURRENT SCENE</div>
+          <div id="scene-title" class="current-scene-title">THE WARNING</div>
+          <p id="scene-description" class="scene-description">A frightened man has come to the police with an unusual warning.</p>
+          <div class="panel-divider"></div>
+          <div class="panel-section-label">CHARACTERS PRESENT</div>
+          <div class="character-list">
+            <div class="character-list-item"><span class="character-dot dot-man"></span><span>UNKNOWN MAN</span><small>WITNESS</small></div>
+            <div class="character-list-item"><span class="character-dot dot-chief"></span><span>HEAD OFFICER</span><small>POLICE</small></div>
+            <div class="character-list-item"><span class="character-dot dot-daichi"></span><span>DAICHI</span><small>OFFICER</small></div>
+          </div>
+          <div class="panel-bottom-note">THE FILE IS INCOMPLETE.<br>PROCEED WITH CAUTION.</div>
+        </aside>
+      </div>
+
+      <section class="dialogue-area">
+        <div class="dialogue-top">
+          <div class="speaker-wrap"><span id="speaker-indicator" class="speaker-indicator"></span><span id="speaker-name">UNKNOWN MAN</span></div>
+          <div class="dialogue-tools"><span id="dialogue-count">01 — 10</span><button id="history-button" class="mini-tool">HISTORY</button><button id="skip-button" class="mini-tool">SKIP »</button></div>
+        </div>
+        <div class="dialogue-content">
+          <p id="dialogue-text">Please... you have to listen to me.</p>
+          <button id="next-button" class="next-button" aria-label="Continue dialogue">CONTINUE <span>↓</span></button>
+        </div>
+        <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+      </section>
+
+      <div id="evidence-overlay" class="overlay hidden">
+        <div class="evidence-card">
+          <button id="close-evidence" class="close-button" aria-label="Close evidence">×</button>
+          <div class="evidence-kicker">DIGITAL EVIDENCE · ITEM 01</div>
+          <div class="evidence-heading">MESSAGE RECEIVED</div>
+          <div class="phone-frame">
+            <div class="phone-top"><span>UNKNOWN SENDER</span><span>23:41</span></div>
+            <div class="message-bubble">
+              YOUR LOAN POINT IS ZERO.<br>
+              BUT YOU DID NOT PARTICIPATE IN THE FINAL GAME.<br>
+              YOU HAVE TO PAY IT TILL 12 AM.
+            </div>
+            <div class="phone-bottom">END-TO-END ENCRYPTED</div>
+          </div>
+          <p class="evidence-note">The sender's identity is unavailable. The message refers to an organization named ZERO HOUSE.</p>
+          <button id="evidence-confirm" class="primary-button evidence-button">RETURN TO INTERROGATION <span>↗</span></button>
+        </div>
+      </div>
+
+      <div id="history-overlay" class="overlay hidden">
+        <div class="history-card">
+          <button id="close-history" class="close-button" aria-label="Close history">×</button>
+          <div class="evidence-kicker">TRANSCRIPT</div>
+          <div class="evidence-heading">DIALOGUE HISTORY</div>
+          <div id="history-list" class="history-list"></div>
+        </div>
+      </div>
+
+      <div id="chapter-end" class="chapter-end hidden">
+        <div class="end-kicker">SCENE COMPLETE</div>
+        <div class="end-title">THE WARNING</div>
+        <p>The man has left the police station. The warning remains unresolved.</p>
+        <div class="end-divider"></div>
+        <div class="end-meta">EPISODE 01 <span>·</span> THE INVITATION</div>
+        <button id="return-title-end" class="primary-button">RETURN TO TITLE <span>↗</span></button>
+      </div>
+    </section>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
