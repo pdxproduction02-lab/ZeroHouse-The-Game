@@ -43,3 +43,51 @@
   .environment-layer,.character-layer,.portrait{transition:none!important}
   .scene-art.shot-enter:after{animation:none;display:none}
 }
+
+/* ZERO HOUSE — Interrogation Room Background */
+
+.environment-layer {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 10, 15, 0.28),
+      transparent 35%,
+      rgba(7, 10, 15, 0.28)
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 7, 11, 0.32),
+      transparent 45%,
+      rgba(5, 7, 11, 0.18)
+    ),
+    url("./assets/interrogation-room-bg.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Remove the previous CSS-built environment */
+
+.room-ceiling,
+.room-window,
+.room-light,
+.room-table,
+.room-chair {
+  display: none;
+}
+
+/* Subtle cinematic atmosphere */
+
+.scene-art {
+  background: #11151b;
+}
+
+.scene-vignette {
+  box-shadow: inset 0 0 110px rgba(0, 0, 0, 0.65);
+}
+
+.scene-grain {
+  opacity: 0.10;
+}
